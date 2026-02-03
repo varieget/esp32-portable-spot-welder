@@ -83,8 +83,8 @@ static const unsigned char PROGMEM she[] = {
     0x00, 0x00, 0x21, 0xF0, 0x11, 0x10, 0x11, 0x10, 0x01, 0x10, 0x02, 0x0E, 0xF4, 0x00, 0x13, 0xF8,
     0x11, 0x08, 0x11, 0x10, 0x10, 0x90, 0x14, 0xA0, 0x18, 0x40, 0x10, 0xA0, 0x03, 0x18, 0x0C, 0x06}; /*设*/
 static const unsigned char PROGMEM zhi[] = {
-    0x7F, 0xFC, 0x44, 0x44, 0x7F, 0xFC, 0x01, 0x00, 0x7F, 0xFC, 0x01, 0x00, 0x1F, 0xF0, 0x10, 0x10,
-    0x1F, 0xF0, 0x10, 0x10, 0x1F, 0xF0, 0x10, 0x10, 0x1F, 0xF0, 0x10, 0x10, 0xFF, 0xFE, 0x00, 0x00}; /*置*/
+    0x00, 0x00, 0x7F, 0xFC, 0x44, 0x44, 0x7F, 0xFC, 0x01, 0x00, 0x7F, 0xFC, 0x01, 0x00, 0x1F, 0xF0,
+    0x10, 0x10, 0x1F, 0xF0, 0x10, 0x10, 0x1F, 0xF0, 0x10, 0x10, 0x1F, 0xF0, 0x10, 0x10, 0xFF, 0xFE}; /*置*/
 static const unsigned char PROGMEM bao[] = {
     0x08, 0x00, 0x0B, 0xF8, 0x0A, 0x08, 0x12, 0x08, 0x12, 0x08, 0x33, 0xF8, 0x30, 0x40, 0x50, 0x40,
     0x97, 0xFC, 0x10, 0xE0, 0x11, 0x50, 0x12, 0x48, 0x14, 0x44, 0x18, 0x42, 0x10, 0x40, 0x10, 0x40}; /*保*/
@@ -170,6 +170,44 @@ static const unsigned char PROGMEM zhi2[] = {
     0x08, 0x40, 0x08, 0x40, 0x0F, 0xFC, 0x10, 0x40, 0x10, 0x40, 0x33, 0xF8, 0x32, 0x08, 0x53, 0xF8,
     0x92, 0x08, 0x13, 0xF8, 0x12, 0x08, 0x13, 0xF8, 0x12, 0x08, 0x12, 0x08, 0x1F, 0xFE, 0x10, 0x00}; /*值*/
 
+static const unsigned char PROGMEM dianrong[] = {
+    0x00, 0x00, 0x00, 0x00, 0x01, 0x10, 0x01, 0x38, 0x01, 0x10, 0x01, 0x00, 0x3F, 0xF8, 0x00, 0x00,
+    0x3F, 0xF8, 0x20, 0x08, 0x3F, 0xF8, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00}; /*电容符号*/
+static const unsigned char PROGMEM dianchi[] = {
+    0x00, 0x00, 0x03, 0x80, 0x02, 0x80, 0x0F, 0xE0, 0x08, 0x20, 0x08, 0x20, 0x08, 0x20, 0x08, 0x20,
+    0x08, 0x20, 0x08, 0x20, 0x08, 0x20, 0x08, 0x20, 0x08, 0x20, 0x08, 0x20, 0x0F, 0xE0, 0x00, 0x00}; /*电池符号*/
+static const unsigned char PROGMEM dianyuan[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0xF0, 0x02, 0x10, 0x04, 0x1C, 0x04, 0x10,
+    0x3C, 0x10, 0x44, 0x1C, 0x42, 0x10, 0x21, 0xF0, 0x10, 0x00, 0x60, 0x00, 0x00, 0x00, 0x00, 0x00}; /*电源符号*/
+static const unsigned char PROGMEM xinpian[] = {
+    0x00, 0x00, 0x02, 0x40, 0x02, 0x40, 0x0F, 0xF0, 0x10, 0x08, 0x10, 0x08, 0x70, 0x0E, 0x10, 0x08,
+    0x10, 0x08, 0x70, 0x0E, 0x10, 0x08, 0x10, 0x08, 0x0F, 0xF0, 0x02, 0x40, 0x02, 0x40, 0x00, 0x00}; /*芯片符号*/
+static const unsigned char PROGMEM guangbiao[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xF0, 0x07, 0xF0, 0x0F, 0xF0,
+    0x1F, 0xF0, 0x0F, 0xF0, 0x07, 0xF0, 0x03, 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; /*光标符号*/
+static const unsigned char PROGMEM hanzhen[] = {
+    0x00, 0x01, 0xFF, 0xFC, 0x00, 0x02, 0x00, 0x04, 0x00, 0x04, 0x00, 0x04, 0x00, 0x08, 0x00, 0x04,
+    0x00, 0x10, 0x00, 0x04, 0x00, 0x23, 0x06, 0x04, 0x00, 0x24, 0x89, 0x04, 0x00, 0x24, 0x89, 0x04,
+    0x00, 0x23, 0x06, 0x04, 0x0F, 0xE0, 0x00, 0x04, 0x78, 0x20, 0x00, 0x04, 0x78, 0x20, 0x00, 0x04,
+    0x0F, 0xE0, 0x00, 0x04, 0x00, 0x3F, 0xFF, 0xFC, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x3F, 0xFF, 0xFC, 0x0F, 0xE0, 0x00, 0x04, 0x78, 0x20, 0x00, 0x04, 0x78, 0x20, 0x00, 0x04,
+    0x0F, 0xE0, 0x00, 0x04, 0x00, 0x23, 0x06, 0x04, 0x00, 0x24, 0x89, 0x04, 0x00, 0x24, 0x89, 0x04,
+    0x00, 0x23, 0x06, 0x04, 0x00, 0x10, 0x00, 0x04, 0x00, 0x08, 0x00, 0x04, 0x00, 0x04, 0x00, 0x04,
+    0x00, 0x02, 0x00, 0x04, 0x00, 0x01, 0xFF, 0xFC}; /*焊针符号*/
+static const unsigned char PROGMEM jishu[] = {
+    0x00, 0x00, 0x03, 0x80, 0x03, 0x80, 0x03, 0x80, 0x03, 0x80, 0x03, 0x80, 0x03, 0x80, 0x03, 0x80,
+    0x13, 0x90, 0x4B, 0xA4, 0x23, 0x88, 0x13, 0x90, 0x49, 0x24, 0x25, 0x48, 0x01, 0x00, 0xFF, 0xFE}; /*焊件电压、点焊计数符号*/
+static const unsigned char PROGMEM ms[] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x61, 0x80,
+    0x73, 0x9C, 0x7F, 0xA4, 0x6D, 0xA0, 0x6D, 0x98, 0x6D, 0x84, 0x61, 0xA4, 0x61, 0xB8, 0x00, 0x00}; /*ms符号*/
+static const unsigned char PROGMEM dadianrong[] = {
+    0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00,
+    0x20, 0x00, 0x00, 0x20, 0x20, 0x00, 0x20, 0x20, 0x00, 0x20, 0xF8, 0x00, 0x20, 0x20, 0x00, 0x20,
+    0x20, 0x00, 0x20, 0x00, 0xFF, 0xFF, 0xF8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xF8,
+    0x80, 0x00, 0x08, 0x80, 0x00, 0x08, 0xFF, 0xFF, 0xF8, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00,
+    0x20, 0x00, 0x00, 0x20, 0xF8, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20,
+    0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00, 0x00, 0x20, 0x00}; /*大电容符号*/
+
 void csh(int xy)
 {
   tft.init();                 // 初始化对象
@@ -188,8 +226,8 @@ void csh(int xy)
 // 初始页面1
 void ym1(float vbu, float vba, float vcc, float ces, float sz)
 {
-  int rgb = 0x07FF;
-  int rgb1 = 0x07E0;
+  int rgb = TFT_CYAN;
+  int rgb1 = TFT_GOLD;
   int y = 0;
   if (int(sz) == 0)
   {
@@ -208,18 +246,17 @@ void ym1(float vbu, float vba, float vcc, float ces, float sz)
   }
 
   tfts.fillSprite(0x0000); // 填充窗口为黑色
-  tfts.setTextSize(2);
+  tfts.setTextFont(2);
   tfts.setTextColor(rgb1);
-  tfts.drawFloat(vbu, 2, 94, 2);
+  tfts.drawFloat(vbu, 2, 110, 2);
   tfts.drawString("V", 146, 2);
-  tfts.drawFloat(vba, 2, 94, 22);
+  tfts.drawFloat(vba, 2, 110, 22);
   tfts.drawString("V", 146, 22);
-  tfts.drawFloat(vcc, 2, 94, 42);
+  tfts.drawFloat(vcc, 2, 110, 42);
   tfts.drawString("V", 146, 42);
-  tfts.drawFloat(ces, 1, 94, 62);
+  tfts.drawFloat(ces, 1, 110, 62);
   tfts.drawString("C", 146, 62);
-
-  tfts.drawRect(0, y, 68, 20, 0xF800); // 画空心矩形(x,y,w,h,rgb)
+  tfts.drawBitmap(68, y, guangbiao, 16, 16, rgb); // 画光标
 
   // 绘制(X坐标 Y坐标 字模数据 字体宽度 字体高度 颜色）
   tfts.drawBitmap(2, 2, zi, 16, 16, rgb);
@@ -242,14 +279,19 @@ void ym1(float vbu, float vba, float vcc, float ces, float sz)
   tfts.drawBitmap(34, 62, she, 16, 16, rgb);
   tfts.drawBitmap(50, 62, zhi, 16, 16, rgb);
 
+  tfts.drawBitmap(94, 2, dianyuan, 16, 16, rgb1);
+  tfts.drawBitmap(94, 22, dianchi, 16, 16, rgb1);
+  tfts.drawBitmap(94, 42, dianrong, 16, 16, rgb1);
+  tfts.drawBitmap(94, 62, xinpian, 16, 16, rgb1);
+
   tfts.pushSprite(0, 0); // 将精灵刷新到屏幕上
 }
 
 // 自动模式
 void ms0(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float cs3)
 {
-  int rgb0 = 0x07FF;
-  int rgb1 = 0x07E0;
+  int rgb0 = TFT_GOLD;
+  int rgb1 = TFT_CYAN;
   int k1 = 45;
   if (cs1 > 0)
   {
@@ -257,45 +299,47 @@ void ms0(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float
   }
 
   tfts.fillSprite(0x0000); // 填充窗口为黑色
-  tfts.setTextSize(2);
   tfts.setTextColor(rgb0);
-  tfts.drawString("Li:", 0, 0);
-  tfts.drawFloat(vba, 2, 35, 0);
-  tfts.drawString("V", 86, 0);
-  tfts.drawFloat(ces, 0, 110, 0);
+  tfts.drawBitmap(0, 0, dianchi, 16, 16, rgb0);
+  tfts.drawFloat(vba, 2, 18, 0);
+  tfts.drawString("V", 54, 0);
+  tfts.drawBitmap(92, 0, xinpian, 16, 16, rgb0);
+  tfts.drawFloat(ces, 1, 110, 0);
   tfts.drawString("C", 148, 0);
 
-  tfts.drawString("Ci:", 0, 64);
-  tfts.drawFloat(vcc, 2, 35, 64);
-  tfts.drawString("V", 86, 64);
+  tfts.drawBitmap(0, 64, dianrong, 16, 16, rgb0);
+  tfts.drawFloat(vcc, 2, 18, 64);
+  tfts.drawString("V", 54, 64);
+  tfts.drawBitmap(92, 64, jishu, 16, 16, rgb0);
   tfts.drawFloat(vhj, 1, 110, 64);
   tfts.drawString("V", 148, 64);
 
   if (vhj < vyz / 10)
   {
-    tfts.drawString("OFF", 15, 33);
+    tfts.drawString("OFF", 40, 33);
     tfts.drawLine(0, 25, 0, 55, rgb1);
+    tfts.drawLine(21, 26, 146, 26, rgb1); // 上导引线画线(x0,y0,x1,y1)
+    tfts.drawBitmap(136, 26, dadianrong, 21, 30, rgb1);
+
+    tfts.drawLine(21, 55, 70, 55, rgb1);  // 下导引线1
+    tfts.drawLine(70, 55, 80, k1, rgb1);  // 开关
+    tfts.drawLine(80, 55, 146, 55, rgb1); // 下导引线2
+    tfts.drawBitmap(3, 26, hanzhen, 30, 30, rgb1);
   }
   else
   {
-    tfts.drawString("ON", 15, 33);
-    tfts.drawLine(3, 25, 3, 55, rgb1);
+    tfts.drawString("ON", 40, 33);
+    tfts.drawLine(3, 25, 3, 55, rgb0);
+    tfts.drawLine(21, 26, 146, 26, rgb0); // 上导引线画线(x0,y0,x1,y1)
+    tfts.drawBitmap(136, 26, dadianrong, 21, 30, rgb0);
+
+    tfts.drawLine(21, 55, 70, 55, rgb0);  // 下导引线1
+    tfts.drawLine(70, 55, 80, k1, rgb0);  // 开关
+    tfts.drawLine(80, 55, 146, 55, rgb0); // 下导引线2
+    tfts.drawBitmap(3, 26, hanzhen, 30, 30, rgb0);
   }
-
-  tfts.drawFloat(cs3, 0, 100, 33);
-
-  tfts.drawLine(3, 38, 16, 25, rgb1); // 画线(x0,y0,x1,y1)
-  tfts.drawLine(16, 25, 150, 25, rgb1);
-
-  tfts.drawLine(150, 25, 150, 38, rgb1);
-  tfts.drawLine(140, 38, 160, 38, rgb1);
-  tfts.drawLine(140, 42, 160, 42, rgb1);
-  tfts.drawLine(150, 55, 150, 42, rgb1);
-
-  tfts.drawLine(3, 42, 16, 55, rgb1);
-  tfts.drawLine(16, 55, 70, 55, rgb1);
-  tfts.drawLine(70, 55, 80, k1, rgb1); // 开关
-  tfts.drawLine(80, 55, 150, 55, rgb1);
+  tfts.drawBitmap(102, 33, jishu, 16, 16, rgb0);
+  tfts.drawFloat(cs3, 0, 118, 33);
 
   tfts.pushSprite(0, 0); // 将精灵刷新到屏幕上
 }
@@ -303,8 +347,8 @@ void ms0(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float
 // 手动模式
 void ms1(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float cs4)
 {
-  int rgb0 = 0x07FF;
-  int rgb1 = 0x07E0;
+  int rgb0 = TFT_GOLD;
+  int rgb1 = TFT_CYAN;
   int k1 = 45;
   if (cs1 > 0)
   {
@@ -312,46 +356,48 @@ void ms1(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float
   }
 
   tfts.fillSprite(0x0000); // 填充窗口为黑色
-  tfts.setTextSize(2);
   tfts.setTextColor(rgb0);
-  tfts.drawString("Li:", 0, 0);
-  tfts.drawFloat(vba, 2, 35, 0);
-  tfts.drawString("V", 86, 0);
-  tfts.drawFloat(ces, 0, 110, 0);
+  tfts.drawBitmap(0, 0, dianchi, 16, 16, rgb0);
+  tfts.drawFloat(vba, 2, 18, 0);
+  tfts.drawString("V", 54, 0);
+  tfts.drawBitmap(92, 0, xinpian, 16, 16, rgb0);
+  tfts.drawFloat(ces, 1, 110, 0);
   tfts.drawString("C", 148, 0);
 
-  tfts.drawString("Ci:", 0, 64);
-  tfts.drawFloat(vcc, 2, 35, 64);
-  tfts.drawString("V", 86, 64);
+  tfts.drawBitmap(0, 64, dianrong, 16, 16, rgb0);
+  tfts.drawFloat(vcc, 2, 18, 64);
+  tfts.drawString("V", 54, 64);
+  tfts.drawBitmap(92, 64, jishu, 16, 16, rgb0);
   tfts.drawFloat(vhj, 1, 110, 64);
   tfts.drawString("V", 148, 64);
 
   if (vhj < vyz / 10)
   {
-    tfts.drawString("OFF", 15, 33);
+    tfts.drawString("OFF", 40, 33);
     tfts.drawLine(0, 25, 0, 55, rgb1);
+    tfts.drawLine(21, 26, 146, 26, rgb1); // 上导引线画线(x0,y0,x1,y1)
+    tfts.drawBitmap(136, 26, dadianrong, 21, 30, rgb1);
+
+    tfts.drawLine(21, 55, 70, 55, rgb1);  // 下导引线1
+    tfts.drawLine(70, 55, 80, k1, rgb1);  // 开关
+    tfts.drawLine(80, 55, 146, 55, rgb1); // 下导引线2
+    tfts.drawBitmap(3, 26, hanzhen, 30, 30, rgb1);
   }
   else
   {
-    tfts.drawString("ON", 15, 33);
-    tfts.drawLine(3, 25, 3, 55, rgb1);
+    tfts.drawString("ON", 40, 33);
+    tfts.drawLine(3, 25, 3, 55, rgb0);
+    tfts.drawLine(21, 26, 146, 26, rgb0); // 上导引线画线(x0,y0,x1,y1)
+    tfts.drawBitmap(136, 26, dadianrong, 21, 30, rgb0);
+
+    tfts.drawLine(21, 55, 70, 55, rgb0);  // 下导引线1
+    tfts.drawLine(70, 55, 80, k1, rgb0);  // 开关
+    tfts.drawLine(80, 55, 146, 55, rgb0); // 下导引线2
+    tfts.drawBitmap(3, 26, hanzhen, 30, 30, rgb0);
   }
 
-  tfts.drawString("MS:", 90, 33);
-  tfts.drawFloat(cs4, 0, 126, 33);
-
-  tfts.drawLine(3, 38, 16, 25, rgb1); // 画线(x0,y0,x1,y1)
-  tfts.drawLine(16, 25, 150, 25, rgb1);
-
-  tfts.drawLine(150, 25, 150, 38, rgb1);
-  tfts.drawLine(140, 38, 160, 38, rgb1);
-  tfts.drawLine(140, 42, 160, 42, rgb1);
-  tfts.drawLine(150, 55, 150, 42, rgb1);
-
-  tfts.drawLine(3, 42, 16, 55, rgb1);
-  tfts.drawLine(16, 55, 70, 55, rgb1);
-  tfts.drawLine(70, 55, 80, k1, rgb1); // 开关
-  tfts.drawLine(80, 55, 150, 55, rgb1);
+  tfts.drawString("M:", 102, 33);
+  tfts.drawFloat(cs4, 0, 118, 33);
 
   tfts.pushSprite(0, 0); // 将精灵刷新到屏幕上
 }
@@ -359,8 +405,8 @@ void ms1(float vba, float vcc, float vhj, float ces, float vyz, float cs1, float
 // 参数设置
 void sz2(int tl1, int th1, int tl2, int th2, int thx, int Lcd, int Led, int vyz, int cs1)
 {
-  int rgb0 = 0x07FF;
-  int rgb1 = 0x07E0;
+  int rgb0 = TFT_GOLD;
+  int rgb1 = TFT_CYAN;
   int y = 0;
   if (cs1 == 0 || cs1 == 4)
   {
@@ -387,21 +433,20 @@ void sz2(int tl1, int th1, int tl2, int th2, int thx, int Lcd, int Led, int vyz,
   }
 
   tfts.fillSprite(0x0000); // 填充窗口为黑色
-  tfts.setTextSize(2);
   tfts.setTextColor(rgb0);
 
-  tfts.drawRect(0, y, 68, 20, 0xF800); // 画空心矩形(x,y,w,h,rgb)
+  tfts.drawBitmap(68, y, guangbiao, 16, 16, rgb1); // 画光标
 
   if (cs1 <= 3)
   {
-    tfts.drawNumber(tl1, 86, 2);
-    tfts.drawString("mS", 136, 2);
-    tfts.drawNumber(th1, 86, 22);
-    tfts.drawString("mS", 136, 22);
-    tfts.drawNumber(th2, 86, 42);
-    tfts.drawString("mS", 136, 42);
-    tfts.drawNumber(tl2, 86, 62);
-    tfts.drawString("mS", 136, 62);
+    tfts.drawNumber(tl1, 110, 2);
+    tfts.drawBitmap(136, 2, ms, 16, 16, rgb0);
+    tfts.drawNumber(th1, 118, 22);
+    tfts.drawBitmap(136, 22, ms, 16, 16, rgb0);
+    tfts.drawNumber(th2, 118, 42);
+    tfts.drawBitmap(136, 42, ms, 16, 16, rgb0);
+    tfts.drawNumber(tl2, 118, 62);
+    tfts.drawBitmap(136, 62, ms, 16, 16, rgb0);
 
     // 绘制(X坐标 Y坐标 字模数据 字体宽度 字体高度 颜色）
     tfts.drawBitmap(2, 2, yan2, 16, 16, rgb1);
@@ -457,9 +502,8 @@ void sz2(int tl1, int th1, int tl2, int th2, int thx, int Lcd, int Led, int vyz,
 // 充电设置
 void sz3(float vbu, float vba, float vcc, float ven)
 {
-  int rgb = 0x07FF;
-  int rgb1 = 0xF800;
-  int rgb2 = 0x07E0;
+  int rgb = TFT_GOLD;
+  int rgb2 = TFT_CYAN;
   int x1 = 92;
   int y1 = 30;
   int y2 = 60;
@@ -483,7 +527,6 @@ void sz3(float vbu, float vba, float vcc, float ven)
   }
 
   tfts.fillSprite(0x0000); // 填充窗口为黑色
-  tfts.setTextSize(2);
 
   tfts.drawLine(65, 40, 80, 40, rgb2);
   tfts.drawLine(80, 40, 90, y1, rgb2); // 开关
@@ -493,18 +536,18 @@ void sz3(float vbu, float vba, float vcc, float ven)
   tfts.drawLine(80, 70, 90, y2, rgb2); // 开关
   tfts.drawLine(90, 70, 108, 70, rgb2);
 
-  tfts.drawRect(x1, 0, 68, 20, rgb2); // 画空心矩形(x,y,w,h,rgb)
+  tfts.drawRect(x1, 0, 68, 20, rgb); // 画空心矩形(x,y,w,h,rgb)
   tfts.drawRect(0, 30, 65, 20, rgb2);
   tfts.drawRect(0, 60, 65, 20, rgb2);
   tfts.drawRect(108, 30, 52, 50, rgb2);
 
   tfts.setTextColor(rgb);
-  tfts.drawString("Vi", 3, 33);
   tfts.drawFloat(vbu, 1, 28, 33);
-  tfts.drawString("Li", 3, 63);
   tfts.drawFloat(vba, 1, 28, 63);
-  tfts.drawString("Ci", 124, 33);
-  tfts.drawFloat(vcc, 2, 111, 63);
+  tfts.drawFloat(vcc, 2, 120, 63);
+  tfts.drawBitmap(12, 33, dianyuan, 16, 16, rgb);
+  tfts.drawBitmap(12, 63, dianchi, 16, 16, rgb);
+  tfts.drawBitmap(124, 33, dadianrong, 21, 30, rgb);
 
   // 绘制(X坐标 Y坐标 字模数据 字体宽度 字体高度 颜色）
   tfts.drawBitmap(2, 2, zi, 16, 16, rgb);
