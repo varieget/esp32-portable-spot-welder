@@ -409,11 +409,11 @@ void DHSZ()
 // 电容充电开关控制和过温保护
 void CVEN()
 {
-  if (CES > 50)
+  if (CES > 60)
   {
     CS5 = 1;
   }
-  else if (CES < 48)
+  else if (CES < 58)
   {
     CS5 = 0;
   }
